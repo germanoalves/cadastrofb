@@ -4,3 +4,4 @@
 - Tailwind CSS
 - FireBase
 - React ToastFy
+- PWA
