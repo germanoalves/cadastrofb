@@ -39,7 +39,7 @@ const LinkForm = (props) => {
     }, [props.currentId]);
     return (
         <div className="">
-            <h1 className=" text-center text-white my-8 text-2xl">Meus Sites Favoritos</h1>
+            <h1 className=" text-center text-white my-8 text-2xl">Meus Sites Favoritos :)</h1>
             <div className="flex justify-center text-center w-screen px-4 lg:w-96 lg:p-0">
                 <form className=" bg-gray-500 rounded-md p-3 w-screen " onSubmit={handleSubmit} >
                     <div className=" flex bg-gray-200 p-1">
