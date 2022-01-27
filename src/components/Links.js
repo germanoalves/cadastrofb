@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from "react";
 import LinkForm from './LinkForm';
+import Filter from './Filter';
 import {toast} from 'react-toastify'
+
 
 import { db } from '../firebase';
 
@@ -54,10 +56,17 @@ const Links = () => {
      getLinks();
     }, []);
 
+  
+
+   
+
+
+
     return (
        <div>
            <div>
             <LinkForm {...{addOrEditLink, currentId, links}}/>
+            <Filter></Filter>
             </div> 
             <div>
                 {links.map(link => (
@@ -87,7 +96,12 @@ const Links = () => {
                                     <strong> Ir para o site</strong>
                                 </a>
                             </div>
-                            
+                            <div>{link.select}</div>
+                            <div>{link.number}</div>
+                            <div>{link.date}</div>
+
+                           
+
                         </div>
                     </div>
                 ))}
